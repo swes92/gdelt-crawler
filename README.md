@@ -35,7 +35,7 @@ Two CSV files are generated:
 - **Control CSV**: Contains metrics such as the number of entries, matched entries, and match percentage for each date, named as 'start_date - end_date - control.csv'.
 
 ### Log Files and Metrics
-A log file named 'gd_crawler_log.txt' is created to record processing information and errors encountered during execution. Metrics such as processing time, progress, and errors are logged for each date processed.
+A log file named 'gd_crawler_log.txt' is created to record processing information and errors encountered during execution. Metrics such as processing time, progress, and errors are logged for each date processed. By being able to track the progress and have the .csv saved after each day, it is possible to restart the process in case of errors or with the download. To do so, simply create a new query with an adjusted timeframe and merge the two .csv-files later manually.
 
 ## Acknowledgement
 This GDELT Crawler utilizes the gdeltPyR module developed by [linwoodc3](https://github.com/linwoodc3).
